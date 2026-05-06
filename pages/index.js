@@ -1,8 +1,15 @@
-import header from 'Portfolio/components/header';
-import hero from 'Portfolio/components/hero';
-import projects from 'Portfolio/components/projects';
-import contact from 'Portfolio/components/contact';
+import Header from '../components/header';
+import Hero from '../components/hero';
+import Projects from '../components/projects';
+import Contact from '../components/contacts';
 
 export default function Home() {
-    console.log('Hello, Next.js!');
+    return (
+        <main>
+            <Header/>
+            <Hero/>
+            <Projects/>
+            <Contact/>
+        </main>
+    );
 }
