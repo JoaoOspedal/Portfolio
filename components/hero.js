@@ -2,12 +2,12 @@ import Image from "next/image";
 import styles from "../styles/Hero.module.css";
 
 const techs = [
-    { name: "PHP",        icon: "/icons/php.svg" },
-    { name: "Laravel",    icon: "/icons/laravel.svg" },
-    { name: "JavaScript", icon: "/icons/javascript.svg" },
-    { name: "Next.js",    icon: "/icons/nextjs.svg" },
-    { name: "Node.js",    icon: "/icons/nodejs.svg" },
-    { name: "Python",     icon: "/icons/python.svg" },
+    { name: "PHP",        icon: "/icons/php.png" },
+    { name: "Laravel",    icon: "/icons/laravel.png" },
+    { name: "JavaScript", icon: "/icons/javascript.webp" },
+    { name: "Next.js",    icon: "/icons/nextjs.png" },
+    { name: "Node.js",    icon: "/icons/nodejs.webp" },
+    { name: "Python",     icon: "/icons/python.png" },
 ];
 
 export default function Hero() {
@@ -29,7 +29,6 @@ export default function Hero() {
         </div>
         <div className={styles.ctas}>
             <button className={styles.button}>Contact</button>
-            <button className={styles.button}>Projects</button>
         </div>
     </section>;
 }

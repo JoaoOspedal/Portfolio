@@ -11,13 +11,13 @@
 .title {
     font-size: clamp(2rem, 6vw, 4rem);
     font-weight: 700;
-    color: black;
+    color: #8b0000;
     margin-bottom: 1.5rem;
 }
 
 .description {
     font-size: 1.1rem;
-    color: #aaa;
+    color: #ffffff;
     line-height: 1.7;
     max-width: 600px;
 }
@@ -35,7 +35,7 @@
 .techTitle {
     font-size: 1rem;
     font-weight: 600;
-    color: #aaa;
+    color: #ffffff;
     margin-bottom: 0.75rem;
 }
 
@@ -50,10 +50,10 @@
     align-items: center;
     gap: 0.4rem;
     padding: 0.4rem 0.75rem;
-    border: 1px solid #ddd;
+    border: 1px solid #555;
     border-radius: 6px;
     font-size: 0.9rem;
-    color: #333;
+    color: #ffffff;
 }
 
 .ctas {
@@ -65,7 +65,7 @@
     padding: 0.75rem 1.5rem;
     font-size: 1rem;
     color: white;
-    background-color: black;
+    background-color: #8b0000;
     border: none;
     border-radius: 4px;
     cursor: pointer;
