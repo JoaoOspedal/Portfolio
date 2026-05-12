@@ -1,4 +1,14 @@
+import Image from "next/image";
 import styles from "../styles/Hero.module.css";
+
+const techs = [
+    { name: "PHP",        icon: "/icons/php.svg" },
+    { name: "Laravel",    icon: "/icons/laravel.svg" },
+    { name: "JavaScript", icon: "/icons/javascript.svg" },
+    { name: "Next.js",    icon: "/icons/nextjs.svg" },
+    { name: "Node.js",    icon: "/icons/nodejs.svg" },
+    { name: "Python",     icon: "/icons/python.svg" },
+];
 
 export default function Hero() {
     return <section className={styles.hero}>
@@ -9,11 +19,12 @@ export default function Hero() {
         <div className={styles.techStack}>
             <h2 className={styles.techTitle}>Technologies</h2>
             <div className={styles.techIcons}>
-                <span className={styles.techIcon}>PHP</span>
-                <span className={styles.techIcon}>Laravel</span>
-                <span className={styles.techIcon}>Laravel</span>
-                <span className={styles.techIcon}>Node.js</span>
-                <span className={styles.techIcon}>Python</span>
+                {techs.map((tech) => (
+                    <span key={tech.name} className={styles.techIcon}>
+                        <Image src={tech.icon} alt={tech.name} width={32} height={32} />
+                        {tech.name}
+                    </span>
+                ))}
             </div>
         </div>
         <div className={styles.ctas}>
