@@ -12,7 +12,14 @@
     font-size: clamp(2rem, 6vw, 4rem);
     font-weight: 700;
     color: #8b0000;
-    margin-bottom: 1.5rem;
+}
+
+.subtitle {
+    font-size: clamp(1.5rem, 3.5vw, 2.5rem);
+    font-weight: 500;
+    color: #8b0000;
+    margin-top: 0.5rem;
+    margin-bottom: 3rem;
 }
 
 .description {
@@ -39,10 +46,27 @@
     margin-bottom: 0.75rem;
 }
 
-.techIcons {
+.marquee {
+    overflow: hidden;
+    width: 100%;
+    mask-image: linear-gradient(to right, transparent, black 15%, black 85%, transparent);
+    -webkit-mask-image: linear-gradient(to right, transparent, black 15%, black 85%, transparent);
+}
+
+.marquee:hover .marqueeTrack {
+    animation-play-state: paused;
+}
+
+.marqueeTrack {
     display: flex;
-    flex-wrap: wrap;
     gap: 0.75rem;
+    width: max-content;
+    animation: marquee 14s linear infinite;
+}
+
+@keyframes marquee {
+    from { transform: translateX(0); }
+    to   { transform: translateX(-50%); }
 }
 
 .techIcon {
@@ -50,8 +74,8 @@
     align-items: center;
     gap: 0.4rem;
     padding: 0.4rem 0.75rem;
-    border: 1px solid #555;
-    border-radius: 6px;
+    border: 1px solid #8b0000;
+    border-radius: 100px;
     font-size: 0.9rem;
     color: #ffffff;
 }
@@ -67,7 +91,7 @@
     color: white;
     background-color: #8b0000;
     border: none;
-    border-radius: 4px;
+    border-radius: 15px;
     cursor: pointer;
     transition: background-color 0.3s ease;
 }

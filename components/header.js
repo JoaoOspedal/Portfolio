@@ -1,12 +1,19 @@
 import styles from '../styles/Header.module.css';
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 
 export default function Header() {
     const [menuAberto, setMenuAberto] = useState(false);
+    const [visible, setVisible] = useState(false);
+
+    useEffect(() => {
+        const handleScroll = () => setVisible(window.scrollY > 60);
+        window.addEventListener('scroll', handleScroll);
+        return () => window.removeEventListener('scroll', handleScroll);
+    }, []);
 
     return (
-        <header className={styles.header}>
-            <div className={styles.logo}>João Pedro</div>
+        <header className={`${styles.header} ${visible ? styles.visible : ''}`}>
+            <div className={styles.logo}>João Pedro Ospedal</div>
 
             <nav className={`${styles.nav} ${menuAberto ? styles.navAberto : ''}`}>
                 <a href="#hero" onClick={() => setMenuAberto(false)}>Início</a>
@@ -14,7 +21,7 @@ export default function Header() {
                 <a href="#contact" onClick={() => setMenuAberto(false)}>Contato</a>
             </nav>
 
-            <button className={styles.hamburguer}  
+            <button className={styles.hamburguer}
                 onClick={() => setMenuAberto(!menuAberto)}
                 aria-label="Menu">
                 <span />
