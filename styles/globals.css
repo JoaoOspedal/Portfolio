@@ -9,8 +9,13 @@ html {
 }
 
 body {
-    background-color: #0d2526;
     font-family: var(--font-inter), sans-serif;
+    background-image: url('/wallpaper/torii.png');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    top: 0 !important;
 }
 
 h1, h2, h3 {
@@ -20,8 +25,18 @@ h1, h2, h3 {
 main {
     max-width: 900px;
     margin: 40px auto;
-    /* border-left: 1px solid #8b0000;
-    border-right: 1px solid #8b0000; */
-    background-color: #0e2f2f;
+    background-color: transparent;
     border-radius: 100px;
+}
+
+/* Suppress Google Translate native UI */
+.goog-te-banner-frame,
+.goog-te-menu-frame,
+.skiptranslate {
+    display: none !important;
+}
+
+html.translated-ltr body,
+html.translated-rtl body {
+    top: 0 !important;
 }

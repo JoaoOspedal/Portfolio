@@ -11,13 +11,13 @@
 .title {
     font-size: clamp(2rem, 6vw, 4rem);
     font-weight: 700;
-    color: #8b0000;
+    color: #fff;
 }
 
 .subtitle {
     font-size: clamp(1.5rem, 3.5vw, 2.5rem);
     font-weight: 500;
-    color: #8b0000;
+    color: #fff;
     margin-top: 0.5rem;
     margin-bottom: 3rem;
 }
@@ -77,6 +77,7 @@
     border: 1px solid #8b0000;
     border-radius: 100px;
     font-size: 0.9rem;
+    background-color: #0e2f2f;
     color: #ffffff;
 }
 
@@ -93,5 +94,7 @@
     border: none;
     border-radius: 15px;
     cursor: pointer;
+    text-decoration: none;
+    text-align: center;
     transition: background-color 0.3s ease;
 }

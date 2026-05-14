@@ -1,4 +1,4 @@
-.section {
+﻿.section {
     max-width: 800px;
     margin: 0 auto;
     padding: 4rem 2rem;
@@ -27,7 +27,7 @@
 }
 
 .card {
-    background-color: #0e2f2f;
+    background-color: #0d2526;
     border-radius: 8px;
     overflow: hidden;
     border: 2px solid #8b0000;
@@ -38,7 +38,7 @@
     position: relative;
     width: 100%;
     aspect-ratio: 16 / 9;
-    background-color: #0e2f2f;
+    background-color: #0d2526;
 }
 
 .body {
@@ -51,7 +51,11 @@
 .name {
     font-size: 1.25rem;
     font-weight: 700;
-    color: #8b0000;
+    color: #fff;
+}
+
+.partner {
+    color: #fff;
 }
 
 .description {

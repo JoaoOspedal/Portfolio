@@ -31,8 +31,8 @@ export default function Hero() {
             </div>
         </div>
         <div className={styles.ctas}>
-            <a href="#contact" className={styles.button}>Contact</a>
             <a href="#projects" className={styles.button}>Projects</a>
+            <a href="#contact" className={styles.button}>Contact</a>
         </div>
     </section>;
 }

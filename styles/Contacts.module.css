@@ -7,7 +7,7 @@
 .heading {
     font-size: 2rem;
     font-weight: 700;
-    color: #8b0000;
+    color: #fff;
     margin-bottom: 0.5rem;
 }
 
@@ -28,7 +28,7 @@
     align-items: center;
     gap: 1.25rem;
     padding: 1.25rem 1.5rem;
-    background-color: #0d2526;
+    background-color: #0e2f2f;;
     /* border: 2px solid #8b0000; */
     border-radius: 30px;
     text-decoration: none;
