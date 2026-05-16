@@ -16,7 +16,7 @@ const databases = [
 ];
 
 const devops = [
-    { name: "Docker", icon: "/icons/docker.png", width: 32 },
+    { name: "Docker", icon: "/icons/docker.webp", width: 32 },
     { name: "GitHub Actions",    icon: "/icons/githubactions.png",    width: 32 },
 ];
 
