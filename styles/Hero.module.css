@@ -46,6 +46,26 @@
     margin-bottom: 0.75rem;
 }
 
+.sector {
+    margin-bottom: 1rem;
+}
+
+.sectorTitle {
+    font-size: 0.8rem;
+    font-weight: 600;
+    color: #aaa;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    margin-bottom: 0.5rem;
+}
+
+.sectorIcons {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+}
+
+
 .marquee {
     overflow: hidden;
     width: 100%;
