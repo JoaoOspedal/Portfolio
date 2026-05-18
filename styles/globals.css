@@ -9,7 +9,7 @@ html {
 }
 
 body {
-    font-family: var(--font-inter), sans-serif;
+    font-family: var(--font-exo2), sans-serif;
     background-image: url('/wallpaper/torii.png');
     background-size: cover;
     background-position: center;
@@ -19,7 +19,7 @@ body {
 }
 
 h1, h2, h3 {
-    font-family: var(--font-exo2), sans-serif;
+    font-family: var(--font-shippori), serif;
 }
 
 main {

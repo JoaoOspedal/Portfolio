@@ -14,10 +14,9 @@
 
 .background {
     width: 95%;
-    height: 85%;
-    background-color: #0d2526;
+    background-color: #0e2f2f;
     border-radius: 100px;
-    margin: 0 auto;
+    margin: 6rem auto 0;
 }
 
 .grid {
@@ -28,10 +27,21 @@
 
 .card {
     background-color: #0d2526;
-    border-radius: 8px;
     overflow: hidden;
-    border: 2px solid #8b0000;
+    border: 2px solid transparent;
     border-radius: 40px;
+    opacity: 0;
+    transform: translateY(32px);
+    transition: opacity 0.5s ease, transform 0.5s ease, border-color 0.25s ease;
+}
+
+.cardVisible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.card:hover {
+    border-color: #8b0000;
 }
 
 .imageWrapper {
@@ -39,6 +49,59 @@
     width: 100%;
     aspect-ratio: 16 / 9;
     background-color: #0d2526;
+    overflow: hidden;
+}
+
+.arrowLeft,
+.arrowRight {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 2;
+    background-color: rgba(139, 0, 0, 0.75);
+    color: #fff;
+    border: none;
+    border-radius: 50%;
+    width: 36px;
+    height: 36px;
+    font-size: 1.4rem;
+    line-height: 1;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background-color 0.2s;
+}
+
+.arrowLeft { left: 0.75rem; }
+.arrowRight { right: 0.75rem; }
+
+.arrowLeft:hover,
+.arrowRight:hover {
+    background-color: #8b0000;
+}
+
+.dots {
+    position: absolute;
+    bottom: 0.6rem;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    gap: 0.4rem;
+    z-index: 2;
+}
+
+.dot {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.4);
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+.dotActive {
+    background-color: #8b0000;
 }
 
 .body {

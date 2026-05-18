@@ -56,7 +56,7 @@ export default function Hero() {
             <h1 className={styles.title}>Portfolio</h1>
             <h2 className={styles.subtitle}>João Pedro Ospedal</h2>
             <p className={styles.description}>
-                I develop modern softwares with a focus on performance, scalability and maintainability. I have experience in both frontend and backend development, and I am always eager to learn new technologies and improve my skills.
+                Junior Full Stack Developer with hands-on experience in web application development and maintenance using PHP (Laravel) and JavaScript, including REST API design, MySQL integration, and Docker-based environments. Currently in the 7th semester of Computer Science at Universidade Tuiuti do Paraná. Focused on clean code, best practices, and continuous growth.
             </p>
 
             <div className={styles.techStack}>

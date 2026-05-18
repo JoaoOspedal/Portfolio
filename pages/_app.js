@@ -1,4 +1,4 @@
-import { Exo_2, Inter } from 'next/font/google';
+import { Exo_2, Shippori_Mincho } from 'next/font/google';
 import '../styles/globals.css';
 import { useEffect } from 'react';
 
@@ -8,9 +8,10 @@ const exo2 = Exo_2({
     weight: ['400', '600', '700'],
 });
 
-const inter = Inter({
+const shippori = Shippori_Mincho({
     subsets: ['latin'],
-    variable: '--font-inter',
+    variable: '--font-shippori',
+    weight: ['400', '600', '700', '800'],
 });
 
 export default function App({ Component, pageProps }) {
@@ -28,7 +29,7 @@ export default function App({ Component, pageProps }) {
     }, []);
 
     return (
-        <div className={`${exo2.variable} ${inter.variable}`}>
+        <div className={`${exo2.variable} ${shippori.variable}`}>
             <div id="google_translate_element" style={{ display: 'none' }} />
             <Component {...pageProps} />
         </div>

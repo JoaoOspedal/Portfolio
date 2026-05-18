@@ -12,13 +12,21 @@ export default function Header() {
         return () => window.removeEventListener('scroll', handleScroll);
     }, []);
 
+    useEffect(() => {
+        const observer = new MutationObserver(() => {
+            const translated = document.documentElement.classList.contains('translated-ltr');
+            setLang(translated ? 'pt' : 'en');
+        });
+        observer.observe(document.documentElement, { attributes: true, attributeFilter: ['class'] });
+        return () => observer.disconnect();
+    }, []);
+
     const toggleLang = () => {
         const next = lang === 'en' ? 'pt' : 'en';
         const select = document.querySelector('.goog-te-combo');
         if (select) {
             select.value = next;
             select.dispatchEvent(new Event('change'));
-            setLang(next);
         }
     };
 
@@ -29,7 +37,7 @@ export default function Header() {
             </header>
 
             <button className={styles.menuButton} onClick={toggleLang}>
-                {lang === 'en' ? 'PT' : 'EN'}
+                {lang.toUpperCase()}
             </button>
 
             <div className={`${styles.navGroup} ${visible ? styles.visible : ''}`}>
